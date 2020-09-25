@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div style="background-color: #eeeae9;" class="col-md-12">
+                <h3 style="padding-top: 3px;" class="text-center">COVID-19 Coronavirus Pandemic</h3>  
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+                <h6 class="text-center">Last Updated : {{currentDate | date:'yyyy-MM-dd'}}</h6>  
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul id="menu" class="text-center">
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/view-by-country']" 
+                  routerLinkActive="router-link-active">Countries</a></li>
+
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/summary/death-rate']" 
+                  routerLinkActive="router-link-active">Death Rate</a></li>
+
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/summary/symptoms']" 
+                  routerLinkActive="router-link-active">Symptoms</a></li>
+
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/summary/incubation']" 
+                  routerLinkActive="router-link-active">Incubation</a></li>
+
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/summary/transmission']" 
+                  routerLinkActive="router-link-active">Transmission</a></li>
+
+                  <li routerLinkActive="active"><a 
+                    [routerLink]="['/summary/news']" 
+                  routerLinkActive="router-link-active">News</a></li>
+              </ul>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

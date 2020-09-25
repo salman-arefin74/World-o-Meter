@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12">
+        <app-summary-menu></app-summary-menu>
+    </div>
+</div>
+
+<br> <br>
+
+<table class="table">
+    <thead>
+       <tr>
+          <th>Country</th>
+          <th>Total Cases</th>
+          <th>New Cases</th>
+          <th>Total Deaths</th>
+          <th>New Deaths</th>
+          <th>Total Recovered</th>
+          <th>Active Cases</th>
+       </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let item of countryViews">
+          <th>{{ item.country }}</th>
+          <td>{{ item.totalCases }}</td>
+          <td>{{ item.newCases }}</td>
+          <td>{{ item.totalDeaths }}</td>
+          <td>{{ item.newDeaths }}</td>
+          <td>{{ item.totalRecovered }}</td>
+          <td>{{ item.activeCases }}</td>
+       </tr>
+    </tbody>
+ </table>

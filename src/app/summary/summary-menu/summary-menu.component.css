@@ -1,0 +1,6 @@
+ul#menu li {
+    display:inline;
+    text-decoration: underline;
+    color: greenyellow;
+    padding: 10px;
+  }

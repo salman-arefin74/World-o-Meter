@@ -1,0 +1,38 @@
+
+<div *ngFor="let sumTot of summaryTotal">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Coronavirus Cases:</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">{{sumTot.totalCases}}</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">Deaths:</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="text-center">{{sumTot.deathCases}}</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">Recovered:</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="text-center">{{sumTot.recoveredCases}}</h5>
+        </div>
+    </div>
+</div>

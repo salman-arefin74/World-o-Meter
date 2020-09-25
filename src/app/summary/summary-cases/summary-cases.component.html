@@ -1,0 +1,37 @@
+<br> <br> <br>
+<div *ngFor="let sumCase of summaryCases">
+    <div class="row">
+        <div class="col-md-2">
+        
+        </div>
+        
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center" style="background-color: #eeeae9;">Active Cases</h3>
+              <p class="card-text text-center">{{sumCase.activeInfected}}</p>
+              <p class="card-text text-center" style="font-weight: bold;">Currently Infected Patients</p>
+              <p class="card-text  text-center">{{sumCase.activeMild}}</p>
+              <p class="card-text  text-center" style="font-weight: bold;">in Mild Condition</p>
+              <p class="card-text  text-center">{{sumCase.activeSerious}}</p>
+              <p class="card-text  text-center" style="font-weight: bold;">Serious or Critical</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center" style="background-color: #eeeae9;">Closed Cases</h3>
+              <p class="card-text text-center">{{sumCase.outcomeClosed}}</p>
+              <p class="card-text text-center" style="font-weight: bold;">Cases which had an outcome</p>
+              <p class="card-text  text-center">{{sumCase.recovered}}</p>
+              <p class="card-text  text-center" style="font-weight: bold;">Recovered / Discharged</p>
+              <p class="card-text  text-center">{{sumCase.deaths}}</p>
+              <p class="card-text  text-center" style="font-weight: bold;">Deaths</p>
+            </div>
+          </div>
+    </div>
+
+    </div>
+</div>
